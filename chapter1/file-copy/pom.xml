@@ -1,20 +1,14 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <parent>
     <groupId>com.camelinaction</groupId>
     <artifactId>chapter1</artifactId>
     <version>2.0.0</version>
     <relativePath>..</relativePath>
   </parent>
-
   <artifactId>chapter1-file-copy</artifactId>
   <name>Camel in Action 2 :: Chapter 1 :: File Copy Example</name>
-
   <dependencies>
     <dependency>
       <groupId>org.apache.camel</groupId>
@@ -24,11 +18,15 @@
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/javax.activation/activation -->
+    <dependency>
+      <groupId>javax.activation</groupId>
+      <artifactId>activation</artifactId>
+      <version>1.1.1</version>
+    </dependency>
   </dependencies>
-
   <build>
     <plugins>
-
       <!-- Allows the example to be run via 'mvn compile exec:java' -->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -41,6 +39,4 @@
       </plugin>
     </plugins>
   </build>
-
 </project>
-
